@@ -41,10 +41,8 @@ SEMILLA          = 1111
 #GRID_C           = [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0]
 #GRID_L1_RATIO    = [0.0, 0.1, 0.3, 0.5, 0.7, 1.0]
 #Iteración 2
-#GRID_C           = [0.05, 0.1, 0.15, 0.25, 0.4]
-#GRID_L1_RATIO    = [0.65, 0.7, 0.75, 0.8, 0.85]
-GRID_C           = [0.15]
-GRID_L1_RATIO    = [0.8]
+GRID_C           = [0.05, 0.1, 0.15, 0.25, 0.4]
+GRID_L1_RATIO    = [0.65, 0.7, 0.75, 0.8, 0.85]
 SOLVER_EN        = "saga"  # único solver que admite Elastic Net en sklearn.
 MAX_ITER_EN      = 5000
 TOL_EN           = 1e-4
