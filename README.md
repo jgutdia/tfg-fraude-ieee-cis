@@ -1,4 +1,3 @@
-# tfg-fraude-ieee-cis
 # Detección de fraude transaccional — TFG
 
 Código Python del Trabajo de Fin de Grado *«Aplicación de técnicas de clasificación supervisada para la detección de fraude transaccional»*.
