@@ -35,7 +35,7 @@ Dentro de cada carpeta, los scripts deben ejecutarse en el siguiente orden:
 
 1. **`preprocesado.py`** — Lee los CSV originales de Kaggle, aplica las transformaciones descritas en la sección 2.3.3 de la memoria (eliminación de variables, imputación, winsorizing, filtrado por correlación) y genera `df_preprocesado.csv`.
 
-2. **`preparacion.py` / `preparacion_und.py`** — A partir de `df_preprocesado.csv`, genera la codificación one-hot, la partición estratificada 80/20 y (solo en la estrategia B) la muestra de entrenamiento balanceada. Produce los archivos CSV de train y test y el objeto de validación cruzada (`cv_folds.joblib`).
+2. **`preparacion.py`** — A partir de `df_preprocesado.csv`, genera la codificación one-hot, la partición estratificada 80/20 y (solo en la estrategia B) la muestra de entrenamiento balanceada. Produce los archivos CSV de train y test y el objeto de validación cruzada (`cv_folds.joblib`).
 
 3. **Scripts de los modelos** — Pueden ejecutarse en cualquier orden. Cada uno realiza la búsqueda de hiperparámetros, el ajuste del umbral de decisión, la evaluación en test, la generación de gráficas y el cálculo de la importancia de variables. Los resultados se guardan en carpetas `resultados_*/`.
 
