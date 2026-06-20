@@ -43,16 +43,10 @@ SEMILLA          = 1111
 #    "max_features":     ["sqrt", "log2"],  # m ~ sqrt(p)/ m ~ log_2(p).
 #}
 #Iteración 2
-#GRID_RF = {
-#    "n_estimators":     [500],              # nº de árboles.
-#    "max_depth":        [20, 30, 40],       # profundidad máxima.
-#    "min_samples_leaf": [1, 2, 4],          # tamaño mínimo de hoja (a mayor, más regularización).
-#    "max_features":     ["log2"],           # m ~ log_2(p).
-#}
 GRID_RF = {
     "n_estimators":     [500],              # nº de árboles.
-    "max_depth":        [30],       # profundidad máxima.
-    "min_samples_leaf": [1],          # tamaño mínimo de hoja (a mayor, más regularización).
+    "max_depth":        [20, 30, 40],       # profundidad máxima.
+    "min_samples_leaf": [1, 2, 4],          # tamaño mínimo de hoja (a mayor, más regularización).
     "max_features":     ["log2"],           # m ~ log_2(p).
 }
 SOLVER_NJOBS        = -1     # núcleos para paralelizar. Si sale WinError 1450, cambiar (por ej. 2).
