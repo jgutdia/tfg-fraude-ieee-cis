@@ -44,18 +44,11 @@ SEMILLA          = 1111
 #    "l2_regularization": [0.0, 1.0],    # para ver qué penalización beneficia más al ajuste.
 #}
 #Iteración 2
-#GRID_GB = {
-#    "learning_rate":     [0.05, 0.1],     # nu/tasa de aprendizaje (valores pequeños generalizan mejor).
-#    "max_iter":          [500],           # cota superior del nº de árboles para convergencia.
-#    "max_leaf_nodes":    [127, 255, 511], # tamaño de cada árbol.
-#    "min_samples_leaf":  [15, 20, 25, 30],# tamaño mínimo de hoja (a mayor, más regularización).
-#    "l2_regularization": [0.0],           # la penalización ridge beneficia el ajuste.
-#}
 GRID_GB = {
-    "learning_rate":     [0.05],     # nu/tasa de aprendizaje (valores pequeños generalizan mejor).
+    "learning_rate":     [0.05, 0.1],     # nu/tasa de aprendizaje (valores pequeños generalizan mejor).
     "max_iter":          [500],           # cota superior del nº de árboles para convergencia.
-    "max_leaf_nodes":    [127], # tamaño de cada árbol.
-    "min_samples_leaf":  [20],# tamaño mínimo de hoja (a mayor, más regularización).
+    "max_leaf_nodes":    [127, 255, 511], # tamaño de cada árbol.
+    "min_samples_leaf":  [15, 20, 25, 30],# tamaño mínimo de hoja (a mayor, más regularización).
     "l2_regularization": [0.0],           # la penalización ridge beneficia el ajuste.
 }
 SOLVER_NJOBS        = -1     # núcleos para paralelizar. Si sale WinError 1450, cambiar (por ej. 2).
